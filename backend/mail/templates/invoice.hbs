@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Hi! {{name}}</p>
+    <div>
+        <h2>Thông tin cá nhân</h2>
+        <div>
+            <p>Thông tin người gửi</p>
+            <ul>
+                {{#each info1}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <p>Thông tin người nhận</p>
+            <ul>
+                {{#each info2}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <h2>sản phẩm</h2>
+        <ul>
+            {{#each product}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <h2>Ghi chú</h2>
+        <ul>
+            {{#each note}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+
+    <p>Đây là đơn xác nhận đơn hàng tư động tự động (no repply) </p>
+    <p>Hân Hạnh được phục vụ quý khác !!!!</p>
+</body>
+
+</html>

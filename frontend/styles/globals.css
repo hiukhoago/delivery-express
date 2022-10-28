@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import '~react-toastify/dist/ReactToastify.css';
+
+
+
+@layer base {
+  h1 {
+    @apply text-6xl leading-18;
+  }
+
+  h2 {
+    @apply text-[42px] leading-[58px] font-semibold
+  }
+
+  h3 {
+    @apply text-3xl
+  }
+
+  h4 {
+    @apply text-2xl
+  }
+}
+
+:root {
+  --neutral-50: #f7f8f9;
+  --neutral-100: #f0f1f3;
+  --neutral-200: #d8dce2;
+  --neutral-300: #c1c7d1;
+  --neutral-400: #939eae;
+  --neutral-500: #64748b;
+  --neutral-600: #5a687d;
+  --neutral-700: #4b5768;
+  --neutral-800: #3c4653;
+  --neutral-900: #313944;
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+}
+
+
+
+/* 
+input , textarea{
+  @apply outline-none;
+  @apply hover:border-[#959ba4] hover:border ;
+} */
+
+textarea {
+  @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+}
+
+
+.input {
+  @apply rounded-md border;
+  @apply outline-none appearance-none min-w-max;
+  @apply bg-white;
+  @apply px-4 py-2 shadow-inner text-neutral-500
+}
+
+label {
+  @apply inline-block mb-2 text-gray-700 w-full
+
+}
+
+input[type="number"],input[type="email"], input[type="text"], input[type="password"] {
+  @apply rounded border text-sm text-gray-800 h-8 w-full px-3
+}
+
+input:focus {
+  @apply border-blue-600
+}
+
+
+input[type="radio"] {
+  @apply appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer
+}
+
+
+footer {
+  @apply mt-3 bg-white px-6 lg:px-0 lg:mt-10 lg:border lg:border-t-2 sm:border-gray-200 py-10
+}
+
+header {
+  @apply md:container md:max-w-7xl
+}
+
+nav {
+  @apply w-full max-h-16 sm:max-h-20 fixed inset-0 z-40
+}
+
+main {
+  @apply mt-[80px] w-full
+}
+
+p {
+  @apply text-sm
+}
+
+select {
+  @apply appearance-none
+}
+
+/* .tag_primary {
+  @apply bg-primary text-white
+} */
+
+.tag_active {
+  @apply bg-primary text-white rounded-[36px] py-2 px-3 cursor-auto
+}
+
+.button_primary {
+  @apply cursor-pointer rounded-md border border-transparent text-center text-base leading-6 font-semibold bg-primary text-white px-2 py-3
+}
+
+.sub_title {
+  @apply text-lg text-black
+}
+
+.header_service {
+  @apply flex items-center justify-between rounded-lg p-3
+}
+
+.header_service:hover {
+  @apply text-[#fe5f00] bg-[#fff2ea]
+}
+
+
+/*------------------------------------------------------------------------------
+define badge
+------------------------------------------------------------------------------*/
+.badge {
+  @apply font-semibold;
+}
+
+.badge.info {
+  @apply bg-blue-100 dark:bg-blue-200 text-blue-700 dark:text-blue-800;
+  @apply border-blue-700 dark:border-blue-800;
+}
+
+.badge.danger {
+  @apply bg-red-100 dark:bg-red-200 text-red-700 dark:text-red-800;
+  @apply border-red-700 dark:border-red-800;
+}
+
+.badge.success {
+  @apply bg-green-100 dark:bg-green-200 text-green-700 dark:text-green-800;
+  @apply border-green-700 dark:border-green-800;
+}
+
+.badge.warning {
+  @apply bg-yellow-100 dark:bg-yellow-200 text-yellow-700 dark:text-yellow-800;
+  @apply border-yellow-700 dark:border-yellow-800;
+}
+
+.badge.neutral {
+  @apply bg-gray-100 dark:bg-gray-200 text-gray-700 dark:text-gray-800;
+  @apply border-gray-700 dark:border-gray-800;
+}
